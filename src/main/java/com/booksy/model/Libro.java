@@ -17,9 +17,11 @@ public class Libro {
     private String descripcion;
     private String imagen;
     private double precio;
+    private String categoria;
     
     // constructor vacio para mongodb
     public Libro() {
+        this.categoria = "General";
     }
     
     // constructor con parametros
@@ -28,6 +30,7 @@ public class Libro {
         this.descripcion = descripcion;
         this.imagen = imagen;
         this.precio = precio;
+        this.categoria = "General";
     }
     
     // getters y setters
@@ -70,5 +73,13 @@ public class Libro {
     
     public void setPrecio(double precio) {
         this.precio = precio;
+    }
+    
+    public String getCategoria() {
+        return categoria;
+    }
+    
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 }
