@@ -28,76 +28,96 @@ public class DataInitializer implements CommandLineRunner {
             
             String imgBase = baseUrl + "/images/";
             
-            // agregar libros clasicos con imagenes locales
-            libroRepository.save(new Libro(
+            // agregar libros clasicos con imagenes locales y categorias
+            Libro libro1 = new Libro(
                 "Los Hermanos Karamazov",
                 "La ultima novela de Dostoyevski, una obra maestra sobre la fe, la duda y la redencion",
                 imgBase + "hermanos-karamazov.jpg",
                 26990
-            ));
+            );
+            libro1.setCategoria("Ficcion");
+            libroRepository.save(libro1);
             
-            libroRepository.save(new Libro(
+            Libro libro2 = new Libro(
                 "Anna Karenina",
                 "Clasico de Leon Tolstoi sobre el amor prohibido y la sociedad rusa del siglo XIX",
                 imgBase + "anna-karenina.jpg",
                 17990
-            ));
+            );
+            libro2.setCategoria("Ficcion");
+            libroRepository.save(libro2);
             
-            libroRepository.save(new Libro(
+            Libro libro3 = new Libro(
                 "Cuentos de Edgar Allan Poe",
                 "Relatos extraordinarios del maestro del terror y el misterio",
                 imgBase + "edgar-allan-poe.jpg",
                 17990
-            ));
+            );
+            libro3.setCategoria("Ficcion");
+            libroRepository.save(libro3);
             
-            libroRepository.save(new Libro(
+            Libro libro4 = new Libro(
                 "Cumbres Borrascosas",
                 "La apasionante historia de amor de Emily Bronte ambientada en los paramos ingleses",
                 imgBase + "cumbres-borrascosas.jpg",
                 17990
-            ));
+            );
+            libro4.setCategoria("Ficcion");
+            libroRepository.save(libro4);
             
-            libroRepository.save(new Libro(
+            Libro libro5 = new Libro(
                 "H.P. Lovecraft - Antologia del Terror",
                 "Los mejores relatos cosmicos del creador de Cthulhu y los Mitos",
                 imgBase + "lovecraft.jpg",
                 17990
-            ));
+            );
+            libro5.setCategoria("Ficcion");
+            libroRepository.save(libro5);
             
-            libroRepository.save(new Libro(
+            Libro libro6 = new Libro(
                 "Don Quijote de la Mancha",
                 "La obra cumbre de Cervantes y de la literatura universal",
                 imgBase + "don-quijote.jpg",
                 29990
-            ));
+            );
+            libro6.setCategoria("Ficcion");
+            libroRepository.save(libro6);
             
-            libroRepository.save(new Libro(
+            Libro libro7 = new Libro(
                 "Alicia en el Pais de las Maravillas",
                 "El clasico de Lewis Carroll sobre el viaje fantastico de Alicia",
                 imgBase + "alicia-maravillas.jpg",
                 15990
-            ));
+            );
+            libro7.setCategoria("Ficcion");
+            libroRepository.save(libro7);
             
-            libroRepository.save(new Libro(
+            Libro libro8 = new Libro(
                 "La Divina Comedia",
                 "El viaje de Dante por el Infierno, Purgatorio y Paraiso",
                 imgBase + "divina-comedia.jpg",
                 26990
-            ));
+            );
+            libro8.setCategoria("Ficcion");
+            libroRepository.save(libro8);
             
-            libroRepository.save(new Libro(
+            Libro libro9 = new Libro(
                 "Peter Pan",
                 "La magica historia del nino que nunca crece de J.M. Barrie",
                 imgBase + "peter-pan.jpg",
                 15990
-            ));
+            );
+            libro9.setCategoria("Ficcion");
+            libroRepository.save(libro9);
             
-            libroRepository.save(new Libro(
+            Libro libro10 = new Libro(
                 "El Conde de Montecristo",
                 "La historia de venganza y redencion de Alejandro Dumas",
                 imgBase + "conde-montecristo.jpg",
                 26990
-            ));
+            );
+            libro10.setCategoria("Ficcion");
+            libroRepository.save(libro10);
             
             System.out.println("Datos inicializados correctamente!");
         }
