@@ -44,7 +44,7 @@ public class DataInitializer implements CommandLineRunner {
                 imgBase + "anna-karenina.jpg",
                 17990
             );
-            libro2.setCategoria("Ficcion");
+            libro2.setCategoria("Historia");
             libroRepository.save(libro2);
             
             Libro libro3 = new Libro(
@@ -62,7 +62,7 @@ public class DataInitializer implements CommandLineRunner {
                 imgBase + "cumbres-borrascosas.jpg",
                 17990
             );
-            libro4.setCategoria("Ficcion");
+            libro4.setCategoria("No Ficcion");
             libroRepository.save(libro4);
             
             Libro libro5 = new Libro(
@@ -71,7 +71,7 @@ public class DataInitializer implements CommandLineRunner {
                 imgBase + "lovecraft.jpg",
                 17990
             );
-            libro5.setCategoria("Ficcion");
+            libro5.setCategoria("Ciencia");
             libroRepository.save(libro5);
             
             Libro libro6 = new Libro(
@@ -89,7 +89,7 @@ public class DataInitializer implements CommandLineRunner {
                 imgBase + "alicia-maravillas.jpg",
                 15990
             );
-            libro7.setCategoria("Ficcion");
+            libro7.setCategoria("Arte");
             libroRepository.save(libro7);
             
             Libro libro8 = new Libro(
@@ -98,7 +98,7 @@ public class DataInitializer implements CommandLineRunner {
                 imgBase + "divina-comedia.jpg",
                 26990
             );
-            libro8.setCategoria("Ficcion");
+            libro8.setCategoria("Historia");
             libroRepository.save(libro8);
             
             Libro libro9 = new Libro(
@@ -116,7 +116,7 @@ public class DataInitializer implements CommandLineRunner {
                 imgBase + "conde-montecristo.jpg",
                 26990
             );
-            libro10.setCategoria("Ficcion");
+            libro10.setCategoria("No Ficcion");
             libroRepository.save(libro10);
             
             System.out.println("Datos inicializados correctamente!");
