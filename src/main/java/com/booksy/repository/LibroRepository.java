@@ -6,9 +6,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-/**
- * repositorio para acceder a los libros en mongodb
- */
+/*
+repo para acceder a los libros en mongodb
+*/
 @Repository
 public interface LibroRepository extends MongoRepository<Libro, String> {
     

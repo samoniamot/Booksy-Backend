@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-/**
- * clase para inicializar datos de prueba
- * se ejecuta al iniciar la aplicacion
- */
+/*
+ clase para inicializar datos de preuba
+ se ejecuta al iniciar la aplicacion
+*/
 @Component
 public class DataInitializer implements CommandLineRunner {
 
@@ -22,9 +22,10 @@ public class DataInitializer implements CommandLineRunner {
     
     @Override
     public void run(String... args) throws Exception {
-        // solo agregar datos si la base esta vacia
-        if (libroRepository.count() == 0) {
-            System.out.println("Inicializando datos de libros...");
+        // limpiar base de datos
+        libroRepository.deleteAll();
+        
+        System.out.println("Inicializando datos de libros...");
             
             String imgBase = baseUrl + "/images/";
             
@@ -120,6 +121,5 @@ public class DataInitializer implements CommandLineRunner {
             libroRepository.save(libro10);
             
             System.out.println("Datos inicializados correctamente!");
-        }
     }
 }

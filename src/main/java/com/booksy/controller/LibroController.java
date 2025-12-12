@@ -9,9 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * controlador rest para manejar los libros
- * tiene los endpoints para el crud
+/*
+ controlador rest para manejar los libros, tiene los endpoints para el crud
  */
 @RestController
 @RequestMapping("/api/libros")

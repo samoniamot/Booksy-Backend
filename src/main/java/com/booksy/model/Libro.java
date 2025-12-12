@@ -3,9 +3,8 @@ package com.booksy.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-/**
- * modelo de libro para la base de datos
- * guarda la informacion de cada libro
+/*
+ modelo de lirbo para la base de datos. guarda la infomacion de cada libro
  */
 @Document(collection = "libros")
 public class Libro {
